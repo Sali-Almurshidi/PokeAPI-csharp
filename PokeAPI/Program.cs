@@ -9,9 +9,11 @@ namespace PokeAPI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            //GetPokemon();
-            GetOnePokemon(2);
+
+            GetPokemon();
+            Console.WriteLine("Enter Pokemon id : ");
+            int num = Convert.ToInt16(Console.ReadLine());
+            GetOnePokemon(num);
             Console.ReadLine();
             Console.ReadKey();
         }
